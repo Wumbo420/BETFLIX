@@ -1,11 +1,9 @@
-# README
+# Rails Application With Review
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome we are creating an applicaion which collects and displays movie review
 
 Things you may want to cover:
-
-* Ruby version
+* ruby 2.4.1p111
 
 * System dependencies
 
@@ -13,13 +11,10 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
+* Database initialization 
 
-* How to run the test suite
+* How to run the test suite  === rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Rails Application With Review
+* Be sure to pull newly updated files before pushing and editing ruby file
+  We can use brances if neccessary
+  Use Brances when possible!!
