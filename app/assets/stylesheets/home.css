@@ -1,0 +1,153 @@
+body,
+html {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(26, 24, 24);
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+
+}
+
+
+/* navbar styling */
+nav{
+  padding: 1px;
+  display: flex;
+  background-color: rgb(31, 30, 30);
+  
+}
+nav .nav-wrapper{
+  margin-left: auto;
+ 
+}
+nav a{
+  text-decoration: none;
+
+
+}
+nav .nav-wrapper a{
+  color: #ffffff;
+}
+
+.logo{
+  float: left;
+  padding: 8px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.logo a{
+  color: #db0000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+
+}
+nav ul{
+  float: right;
+
+}
+nav ul li{
+  display: inline-block;
+
+}
+nav ul li:not(:first-child){
+  margin-left: 48px;
+}
+nav ul li:last-child{
+  margin-right: 24px;
+}
+nav ul li a{
+  display: inline-block;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #564d4d;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+}
+.image{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#img1{
+    min-height: 100%;
+    background-image: url("../Img/aboutpic1.jpeg");
+}
+
+
+
+.content{
+    padding: 10% 5%;
+    box-sizing: border-box;
+    width: 50%;
+    background: #0a0a0a;
+}
+.theme{
+    font-weight: 900;
+    font-size: 1.7vmin;
+    text-transform: uppercase;
+    font-family: Poppins;
+    letter-spacing: 10px;
+    color: grey;
+}
+.header{
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin: 3vmin 0 3.5vmin;
+    font-family: Poppins;
+    color: #fff;
+}
+.paragraph{
+    font-size: 1.6vmin;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+    color: #fff;
+    font-family: Poppins;
+
+}
+.link{
+    color: #fff;
+    font-size: 1.8vmin;
+    display: block;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
