@@ -1,65 +1,136 @@
 /* navbar styling */
-nav{
-  padding: 1px;
-  display: flex;
-  background-color: rgb(31, 30, 30);
+@media screen and (min-width: 800px) {
+  nav{
+    padding: 1px;
+    display: flex;
+    background-color: rgb(31, 30, 30);
+    
+  }
+  nav .nav-wrapper{
+    margin-left: auto;
+   
+  }
+  nav a{
+    text-decoration: none;
   
+  
+  }
+  nav .nav-wrapper a{
+    color: #ffffff;
+  }
+  
+  .logo{
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+  .logo a{
+    color: #db0000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  
+  }
+  nav ul{
+    float: right;
+  
+  }
+  nav ul li{
+    display: inline-block;
+  
+  }
+  nav ul li:not(:first-child){
+    margin-left: 48px;
+  }
+  nav ul li:last-child{
+    margin-right: 24px;
+  }
+  nav ul li a{
+    display: inline-block;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #564d4d;
+  }  
 }
-nav .nav-wrapper{
+  
+  
+  
+@media screen and (max-width: 800px) {
+  
+  nav{
+    display: inline-block;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+  }
+  nav .nav-wrapper{
   margin-left: auto;
- 
-}
-nav a{
-  text-decoration: none;
-
-
-}
-nav .nav-wrapper a{
-  color: #ffffff;
-}
-
-.logo{
-  float: left;
-  padding: 8px;
-  margin-left: 16px;
-  margin-top: 8px;
-}
-.logo a{
-  color: #db0000;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-
-}
-nav ul{
-  float: right;
-
-}
-nav ul li{
-  display: inline-block;
-
-}
-nav ul li:not(:first-child){
-  margin-left: 48px;
-}
-nav ul li:last-child{
-  margin-right: 24px;
-}
-nav ul li a{
-  display: inline-block;
-  outline: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1.2px;
-  font-weight: 600;
-}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #564d4d;
+   
+  }
+  nav a{
+    text-decoration: none;
+  
+  
+  }
+  nav .nav-wrapper a{
+    color: #ffffff;
+  }
+  
+  .logo{
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+  .logo a{
+    color: #db0000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  
+  }
+  nav ul{
+    float: right;
+  
+  }
+  nav ul li{
+    display: inline-block;
+  
+  }
+  nav ul li:not(:first-child){
+    margin-left: 48px;
+  }
+  nav ul li:last-child{
+    margin-right: 24px;
+  }
+  nav ul li a{
+    display: inline-block;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #564d4d;
+  }  
 }
