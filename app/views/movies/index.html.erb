@@ -1,15 +1,19 @@
-<h1>Listing articles</h1>
- <%= link_to 'New movie', new_movie_path %>
+<h2>Listing articles </h2>
+<h2><%= link_to 'New movie', new_movie_path %></h2>
+ 
 <table>
+  <thead>
   <tr>
-    <th>Title</th>
-    <th>Rating</th>
-    <th>Description</th>
-    <th>Genres</th>
+    <th><h1>Title</h1></th>
+    <th><h1>Rating</h1></th>
+    <th><h1>Description</h1></th>
+    <th><h1>Genre</h1></th>
     <th></th>
   </tr>
+  </thead>
  
   <% @movies.each do |movie| %>
+  <tbody>
     <tr>
       <td><%= movie.title %></td>
       <td><%= movie.rating %></td>
@@ -17,5 +21,6 @@
       <td><%= movie.genres %></td>
       <td><%= link_to 'Show', movie_path(movie) %></td>
     </tr>
+    </tbody>
   <% end %>
 </table>

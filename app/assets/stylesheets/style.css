@@ -96,6 +96,24 @@
         opacity: 0.7;
         transition: opacity 0.3s ease;
     }
+    h1 {
+      font-size: 3em;
+      font-weight: 300;
+      line-height: 1em;
+      text-align: center;
+      color: #4dc3fa;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: 300;
+      text-align: center;
+      display: block;
+      line-height: 1em;
+      padding-bottom: 2em;
+      color: #fb667a;
+    }
+
 
 
 /*small screen compatibility*/
