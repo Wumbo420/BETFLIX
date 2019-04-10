@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  Rating: 9.99
+  Desc: MyText
+  genres: MyString
+
+two:
+  title: MyString
+  Rating: 9.99
+  Desc: MyText
+  genres: MyString

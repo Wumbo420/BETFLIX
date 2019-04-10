@@ -1,0 +1,22 @@
+<h1> list page</h1>
+<%= form_with scope: :movie, url: movies_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ <p>
+    <%= form.label :Rating %><br>
+    <%= form.text_area :decimal %>
+  </p>
+  <p>
+    <%= form.label :Desc %><br>
+    <%= form.text_area :text %>
+  </p>
+ <p>
+    <%= form.label :genres %><br>
+    <%= form.text_area :genres %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
