@@ -35,8 +35,9 @@
         background: #221F1F;
   
     }
-      tr:hover{
+      td:hover{
           background: #E50914;
+         
       }
     th,td{
         text-align: left;
@@ -47,3 +48,23 @@
         font-size: 20px;
         
     }
+    td a{
+        text-decoration: none;
+        color: #fff
+  
+    }
+   #link_to{
+        
+        outline: none;
+        height:100px;
+        text-align: center;
+        width: 100%;
+        background: #221F1F;
+       
+        color: #fff;
+        text-shadow: 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+   
