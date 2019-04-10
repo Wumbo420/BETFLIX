@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
-    get 'pages/index'
     
-    root 'pages#index'
-    
+   root 'pages#index'
     get 'pages/login'
-    
-    root 'pages#login'
-    
     get 'pages/list'
+    get 'pages/index'
     
     resources :movies
   
-    root 'pages#list'
+ 
 end
