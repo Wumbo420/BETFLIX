@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     get 'pages/list'
     
     resources :movies
-    
+  
     root 'pages#list'
 end
