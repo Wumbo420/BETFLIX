@@ -3,7 +3,7 @@
       font-weight: 300;
       line-height: 1em;
       text-align: center;
-      color: #4dc3fa;
+      color: #FFF;
     }
 
     h2 {
@@ -13,11 +13,37 @@
       display: block;
       line-height: 1em;
       padding-bottom: 2em;
-      color: #fb667a;
+      color: #fff;
     }
     h2 a {
       font-weight: 700;
       text-transform: uppercase;
-      color: #fb667a;
+      color: #fff;
       text-decoration: none;
+    }
+    table{
+    
+      width: 100%;
+    }
+    thead th{
+        font-weight: 400;
+        background: #221F1F;
+        font-family: poppins;
+       
+    }
+    tr{
+        background: #221F1F;
+  
+    }
+      tr:hover{
+          background: #E50914;
+      }
+    th,td{
+        text-align: left;
+        padding: 20px;
+        font-weight: 300;
+        font-family: poppins;
+        color: #fff;
+        font-size: 20px;
+        
     }

@@ -1,14 +1,9 @@
-<h2>Listing articles </h2>
-<h2><%= link_to 'New movie', new_movie_path %></h2>
- 
+<h1>Listing articles </h1>
 <table>
   <thead>
   <tr>
     <th><h1>Title</h1></th>
-    <th><h1>Rating</h1></th>
-    <th><h1>Description</h1></th>
-    <th><h1>Genre</h1></th>
-    <th></th>
+    <th><h1>Review</h1></th>
   </tr>
   </thead>
  
@@ -16,11 +11,10 @@
   <tbody>
     <tr>
       <td><%= movie.title %></td>
-      <td><%= movie.rating %></td>
-       <td><%= movie.desc %></td>
-      <td><%= movie.genres %></td>
-      <td><%= link_to 'Show', movie_path(movie) %></td>
+      <td><%= link_to 'See Movie', movie_path(movie) %></td>
     </tr>
     </tbody>
   <% end %>
 </table>
+
+<h2><%= link_to 'Add A New Movie', new_movie_path %></h2>
