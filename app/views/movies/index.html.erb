@@ -1,20 +1,35 @@
 <h1>Movie Listings </h1>
-<table>
-  <thead>
-  <tr>
-    <th><h1>Title</h1></th>
-    <th><h1>Review</h1></th>
-  </tr>
-  </thead>
- 
+
   <% @movies.each do |movie| %>
-  <tbody>
-    <tr>
-      <td><%= movie.title %></td>
-      <td class ="link_to"><%= link_to 'See Movie', movie_path(movie) %></td>
-    </tr>
-    </tbody>
+ 
+    <!--Card mockup -->
+    <div class="slide">
+      <div class="card">
+        <div class="image" id="img1"></div>
+        <div class="content">
+          <p class="theme"><%= movie.title %></p>
+          <h2 class="header"> <%= movie.rating %></h2>
+          <p class="paragraph"> <%= movie.desc %></p>
+          <h2><%= link_to 'Read Review', movie_path(movie) %></h2>
+        
+        </div>
+      </div>
+    </div>
+    
+  <!--End card mockup-->
   <% end %>
 </table>
 
-<h2><%= link_to 'Add A New Movie', new_movie_path %></h2>
+<h2><%= link_to 'Dont see a movie? Add one here!', new_movie_path %></h2>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.slide',{
+        delay: 400,
+        easing: 'ease',
+        scale :0.85,
+        reset: true,
+        mobile: true
+   
+  });
+</script>
