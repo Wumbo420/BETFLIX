@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  Rating: 9.99
-  Desc: MyText
-  genres: MyString
+  desc: MyText
+  rating: 9.99
+  genres: MyText
 
 two:
   title: MyString
-  Rating: 9.99
-  Desc: MyText
-  genres: MyString
+  desc: MyText
+  rating: 9.99
+  genres: MyText
