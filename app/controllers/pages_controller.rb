@@ -1,1 +1,8 @@
-# contoller for login and account info
+class PagesController < ApplicationController
+  def index
+  end
+  def create
+    render plain: params[:movie].inspect
+  end
+ 
+end
