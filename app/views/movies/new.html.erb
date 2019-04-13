@@ -1,23 +1,23 @@
-<h1> list page</h1>
-<%= link_to 'New movie', new_movie_path %>
+<h1>New Movies</h1>
+
 <%= form_with scope: :movie, url: movies_path, local: true do |form| %>
-  <p>
+  <p id="title">
     <%= form.label :title %><br>
     <%= form.text_field :title %>
   </p>
- <p>
+ <p id="rating">
     <%= form.label :rating %><br>
     <%= form.text_field :rating %>
   </p>
-  <p>
+  <p id="descriptor">
     <%= form.label :desc %><br>
     <%= form.text_area :desc %>
   </p>
- <p>
+ <p id="genre">
     <%= form.label :genres %><br>
     <%= form.text_field :genres %>
   </p>
-  <p>
+  <p id="submit">
     <%= form.submit %>
   </p>
 <% end %>
