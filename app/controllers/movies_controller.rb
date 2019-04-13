@@ -1,3 +1,4 @@
+# main Controller for adding movies
 class MoviesController < ApplicationController
     def index
     @movies = Movie.all
