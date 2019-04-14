@@ -144,8 +144,8 @@
         outline: none;
     }
     .btn {
-        display: inline-block;
-        position: fixed;
+        display: block;
+        position: absolute;
         cursor: pointer;
         font: inherit;
         border-style: solid;
@@ -254,23 +254,24 @@
 
 
 /*small screen compatibility*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     html {
         font-family: 'poppins', sans-serif;
         width: 100%;
         height: 100%;
         background: rgb(26, 24, 24);
-        margin:0; 
+        margin:0;
         padding:0;
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
     }
-    
+
+
     body{
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 1px;
-        margin:0; 
+        margin:0;
         padding:0;
         width: 100%;
         height: 90%;
