@@ -16,6 +16,13 @@ class MoviesController < ApplicationController
          @movie.save
          redirect_to @movie
     end
+    def destroy
+        @movie = Movie.find(params[:id])
+        @movie.destroy
+
+        redirect_to @movie
+    end
+
 end
 private
     def movie_params
