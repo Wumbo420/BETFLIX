@@ -1,3 +1,3 @@
 class Movie < ApplicationRecord
-  has_many :comment,dependent: :destroya
+  has_many :comment,dependent: :destroy
 end
