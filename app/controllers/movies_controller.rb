@@ -22,6 +22,7 @@ class MoviesController < ApplicationController
 
         redirect_to @movie
     end
+
 end
 private
     def movie_params
