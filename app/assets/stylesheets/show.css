@@ -1,70 +1,73 @@
-    h1 {
-      font-size: 3em;
-      font-weight: 300;
-      line-height: 1em;
-      text-align: center;
-      color: #FFF;
-    }
+h1{
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #FFF;
+}
 
-    h2 {
-      font-size: 1em;
-      font-weight: 300;
-      text-align: center;
-      display: block;
-      line-height: 1em;
-      padding-bottom: 2em;
-      color: #fff;
-    }
-    h2 a {
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #fff;
-      text-decoration: none;
-    }
-    table{
+h2{
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #fff;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+table{
+
+  width: 100%;
+}
+
+thead th{
+    font-weight: 400;
+    background: #221F1F;
+    font-family: poppins;
+   
+}
+tr{
+    background: #221F1F;
+
+}
+  td:hover{
+      background: #E50914;
+     
+  }
+th,td{
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+    font-family: poppins;
+    color: #fff;
+    font-size: 20px;
     
-      width: 100%;
-    }
-    thead th{
-        font-weight: 400;
-        background: #221F1F;
-        font-family: poppins;
-       
-    }
-    tr{
-        background: #221F1F;
-  
-    }
-      td:hover{
-          background: #E50914;
-         
-      }
-    th,td{
-        text-align: left;
-        padding: 20px;
-        font-weight: 300;
-        font-family: poppins;
-        color: #fff;
-        font-size: 20px;
-        
-    }
-    td a{
-        text-decoration: none;
-        color: #fff
-  
-    }
-   #link_to{
-        
-        outline: none;
-        height:100px;
-        text-align: center;
-        width: 100%;
-        background: #221F1F;
-       
-        color: #fff;
-        text-shadow: 0;
-        letter-spacing: 1px;
-        cursor: pointer;
-        font-size: 12px;
-    }
+}
+td a{
+    text-decoration: none;
+    color: #fff
+
+}
+#link_to{
+    
+    outline: none;
+    height:100px;
+    text-align: center;
+    width: 100%;
+    background: #221F1F;
+   
+    color: #fff;
+    text-shadow: 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 12px;
+}
    

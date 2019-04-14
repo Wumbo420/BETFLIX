@@ -8,17 +8,17 @@
         width: 100%;
         height: 100%;
         background: rgb(26, 24, 24);
-        margin:0; 
+        margin:0;
         padding:0;
         -webkit-font-smoothing: antialiased;
-       
+
     }
-    
+
     body{
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 1px;
-        margin:0; 
+        margin:0;
         padding:0;
         width: 100%;
         height: 90%;
@@ -89,8 +89,8 @@
         padding-top: 1em;
         font-weight: 700;
     }
-    ::-webkit-scrollbar { 
-    display: none; 
+    ::-webkit-scrollbar {
+    display: none;
     }
     .log-form{
         width: 40%;
@@ -144,8 +144,8 @@
         outline: none;
     }
     .btn {
-        display: block;
-        position: absolute;
+        display: inline-block;
+        position: fixed;
         cursor: pointer;
         font: inherit;
         border-style: solid;
@@ -200,15 +200,15 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
- 
-    
-    
+
+
+
     #img1{
         min-height: 100%;
         background-image: url(betflix.png);
     }
-    
-    
+
+
     .content{
         padding: 40px;
         box-sizing: content-box;
@@ -239,7 +239,7 @@
         margin-bottom: 2.5vmin;
         color: #fff;
         font-family: Poppins;
-    
+
     }
     .link{
         color: #fff;
@@ -254,7 +254,7 @@
 
 
 /*small screen compatibility*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     html {
         font-family: 'poppins', sans-serif;
         width: 100%;
@@ -265,7 +265,6 @@
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
     }
-
 
     body{
         font-size: 15px;
