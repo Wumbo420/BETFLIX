@@ -8,9 +8,10 @@
         width: 100%;
         height: 100%;
         background: rgb(26, 24, 24);
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         -webkit-font-smoothing: antialiased;
+    }
 
 
 
@@ -52,6 +53,26 @@
     color: #fff;
     font-size: 12px;
 }
+
+/*sign up button :*/
+#sign{
+    background: rgba(71,71,71,0.9);
+    border-radius: 5px; 
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+
+
 #title{
     position: absolute;
     top: 30%;
