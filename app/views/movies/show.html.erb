@@ -2,3 +2,33 @@
 
           <p class="theme"><%= @movie.title %></p>
 
+          <h2>Comments</h2>
+          <% @movie.comments.each do |comment| %>
+
+
+                  <p > <%= comment.name %></p>
+                  <p >  <%= comment.comment %></p>
+
+
+
+
+          <% end %>
+
+
+          <h2>Add a comment</h2>
+          <%= form_for([@movie,@movie.comments.build]) do |form| %>
+            <p>
+              <%= form.label :name %><br>
+              <%= form.text_field :name %>
+            </p>
+            <p>
+              <%= form.label :comment %><br>
+              <%= form.text_area :comment %>
+            </p>
+            <p>
+              <%= form.submit %>
+            </p>
+
+          <% end %>
+
+
