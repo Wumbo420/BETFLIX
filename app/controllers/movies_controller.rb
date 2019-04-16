@@ -22,6 +22,18 @@ class MoviesController < ApplicationController
 
         redirect_to @movie
     end
+    def edit
+        @movie = Movie.find(params[:id])
+    end
+    def update
+        @movie = movie.find(params[:id])
+        
+        if @movie.update(movie_params)
+            redirect_to @movie
+        else
+            render 'edit'
+        end
+    end
 
 end
 private
