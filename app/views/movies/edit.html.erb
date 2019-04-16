@@ -1,6 +1,6 @@
 <h1>Edit Movies</h1>
 
-<%= form_with scope: :movie, url: movies_path, local: true do |form| %>
+<%= form_for :movie, url: movie_path, method: :update do |form| %>
   <p id="title">
     <%= form.label :title %><br>
     <%= form.text_field :title %>
