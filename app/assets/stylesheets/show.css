@@ -31,11 +31,12 @@ h1{
 }
 .post-container{
     width: 45%;
-    border: solid #fff;
+    border: solid;
     background-color: #fff;
     margin: 0 auto;
     margin-bottom: 2em;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.78);
+    border-radius: 20px;
 
 
 }
@@ -46,6 +47,7 @@ h1{
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
     font-weight: bold;
 
+
 }
 .post-container #comment{
     margin: 0 auto;
@@ -53,17 +55,16 @@ h1{
     color: #E50914;
     font-weight: bold;
 
+
 }
 .post-container #btn{
-    display: block;
+
     background-color:  #221F1F;
-    width: 300px;
+    width: 200px;
     height: 50px;
-    margin: auto 0;
-    color: #fff;
+    color: #E50914;
     cursor: pointer;
-    overflow: hidden;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
 }
 .comment-container p {
@@ -72,6 +73,9 @@ h1{
     text-align: center;
 
 
+}
+.comment-container #comment-name{
+    color: #E50914;
 }
 
 

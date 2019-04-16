@@ -1,6 +1,6 @@
 
           <div class = "movie-container">
-          <h1 class="theme"><%= @movie.title %></h1>
+          <h1><%= @movie.title %></h1>
           <p class="paragraph"> <%= @movie.desc %></p>
           </div>
 
@@ -28,7 +28,7 @@
           <% @movie.comments.each do |comment| %>
 
             <div class = "comment-container">
-              <p><%= comment.name %></p>
+              <p id ="comment-name"><%=comment.name %></p>
               <p><%= comment.comment %></p>
             </div>
 
