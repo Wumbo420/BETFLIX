@@ -5,68 +5,74 @@ h1{
   text-align: center;
   color: #FFF;
 }
-
-h2{
-  font-size: 1em;
-  font-weight: 300;
-  text-align: center;
-  display: block;
-  line-height: 1em;
-  padding-bottom: 2em;
-  color: #fff;
+.movie-container{
+    top: 10%;
+    width: 75%;
+    border: solid #221F1F;
+    background-color: #221F1F;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 3em;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
 }
-
-h2 a {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
-
-table{
-
-  width: 100%;
-}
-
-thead th{
-    font-weight: 400;
-    background: #221F1F;
-    font-family: poppins;
-   
-}
-tr{
-    background: #221F1F;
-
-}
-  td:hover{
-      background: #E50914;
-     
-  }
-th,td{
-    text-align: left;
-    padding: 20px;
-    font-weight: 300;
-    font-family: poppins;
-    color: #fff;
-    font-size: 20px;
-    
-}
-td a{
-    text-decoration: none;
-    color: #fff
-
-}
-#link_to{
-    
-    outline: none;
-    height:100px;
+.movie-container .paragraph{
     text-align: center;
-    width: 100%;
-    background: #221F1F;
-   
-    color: #fff;
-    text-shadow: 0;
-    letter-spacing: 1px;
-    cursor: pointer;
-    font-size: 12px;
 }
+.comment-container{
+    width: 35%;
+    border: solid #221F1F;
+    background-color: #221F1F;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
+
+}
+.post-container{
+    width: 45%;
+    border: solid #fff;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.78);
+
+
+}
+.post-container #commenter{
+    margin: 0 auto;
+    text-align: center;
+    color: #E50914;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    font-weight: bold;
+
+}
+.post-container #comment{
+    margin: 0 auto;
+    text-align: center;
+    color: #E50914;
+    font-weight: bold;
+
+}
+.post-container #btn{
+    display: block;
+    background-color:  #221F1F;
+    width: 300px;
+    height: 50px;
+    margin: auto 0;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+}
+.comment-container p {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+
+

@@ -8,14 +8,13 @@
         <div class="image" id="img1"></div>
         <div class="content">
           <p class="theme"><%= movie.title %></p>
-          <p class="paragraph"> <%= movie.desc %></p>
-          <h1>Rating: <%=  movie.rating %></h1>
-          <h2><%= link_to 'Read Review', movie_path(movie) %></h2>
+          <h1>Rated: <%=  movie.rating %></h1>
+          <h2><%= link_to 'Read Reviews', movie_path(movie) %></h2>
           <h2><%= link_to 'Edit', edit_movie_path(movie) %></h2>
           <h2><%= link_to 'Delete this Movie', movie_path(movie),
-                          method: :delete,
-                          data: {confirm: 'Delete ' + '' + movie.title + ' ?'}
-          %></h2>
+                                 method: :delete,
+                                 data: {confirm: 'Delete ' + '' + movie.title + ' ?'}
+        %></h2>
         
         </div>
       </div>
@@ -25,7 +24,7 @@
   <% end %>
 
 
-<br><h2><%= link_to 'Dont see a movie? Add one here!', new_movie_path %></h2>
+<h2><%= link_to 'Dont see a movie? Add one here!', new_movie_path %></h2>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>

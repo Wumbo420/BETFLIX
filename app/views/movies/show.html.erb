@@ -1,34 +1,51 @@
 
-
-          <p class="theme"><%= @movie.title %></p>
-
-          <h2>Comments</h2>
-          <% @movie.comments.each do |comment| %>
-
-
-                  <p > <%= comment.name %></p>
-                  <p >  <%= comment.comment %></p>
+          <div class = "movie-container">
+          <h1 class="theme"><%= @movie.title %></h1>
+          <p class="paragraph"> <%= @movie.desc %></p>
+          </div>
 
 
 
 
-          <% end %>
-
-
-          <h2>Add a comment</h2>
+          <h1>Post a review</h1>
           <%= form_for([@movie,@movie.comments.build]) do |form| %>
-            <p>
+            <div class = "post-container">
+            <p id="commenter">
               <%= form.label :name %><br>
               <%= form.text_field :name %>
             </p>
-            <p>
+            <p id ="comment">
               <%= form.label :comment %><br>
-              <%= form.text_area :comment %>
+              <%= form.text_field :comment %>
             </p>
-            <p>
-              <%= form.submit %>
-            </p>
+
+
+              <button id = "btn" <%= form.submit %>></button>
+
+            </div>
+          <% end %>
+          <h1>Comments</h1>
+          <% @movie.comments.each do |comment| %>
+
+            <div class = "comment-container">
+              <p><%= comment.name %></p>
+              <p><%= comment.comment %></p>
+            </div>
+
+
+
 
           <% end %>
 
 
+          <script src="https://unpkg.com/scrollreveal"></script>
+          <script>
+              ScrollReveal().reveal('.comment-container',{
+                  delay: 300,
+                  easing: 'ease',
+                  scale :0.85,
+                  reset: true,
+                  mobile: true
+
+              });
+          </script>
