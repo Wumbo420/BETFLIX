@@ -26,7 +26,7 @@ class MoviesController < ApplicationController
         @movie = Movie.find(params[:id])
     end
     def update
-        @movie = movie.find(params[:id])
+        @movie = Movie.find(params[:id])
         
         if @movie.update(movie_params)
             redirect_to @movie
