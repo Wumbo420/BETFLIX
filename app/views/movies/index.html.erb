@@ -9,6 +9,7 @@
         <div class="content">
           <p class="theme"><%= movie.title %></p>
           <h1>Rated: <%=  movie.rating %></h1>
+          <h1>Genre: <%=  movie.genres %></h1>
           <h2><%= link_to 'Read Reviews', movie_path(movie) %></h2>
           <h2><%= link_to 'Edit', edit_movie_path(movie) %></h2>
           <h2><%= link_to 'Delete this Movie', movie_path(movie),
