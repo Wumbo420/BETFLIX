@@ -23,7 +23,7 @@ class MoviesController < ApplicationController
         redirect_to @movie
     end
     def edit
-        @movie = movies.find(params[:id])
+        @movie = Movie.find(params[:id])
     end
     def update
         @movie = movie.find(params[:id])
