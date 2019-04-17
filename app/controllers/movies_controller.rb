@@ -16,15 +16,11 @@ class MoviesController < ApplicationController
          @movie.save
          redirect_to @movie
     end
-    def destroy
-        @movie = Movie.find(params[:id])
-        @movie.destroy
-
-        redirect_to @movie
-    end
+   
     def edit
         @movie = Movie.find(params[:id])
     end
+   
     def update
         @movie = Movie.find(params[:id])
         
@@ -34,9 +30,16 @@ class MoviesController < ApplicationController
             render 'edit'
         end
     end
+   
+    def destroy
+        @movie = Movie.find(params[:id])
+        @movie.destroy
+
+        redirect_to @movie
+    end
 
 end
 private
     def movie_params
-        params.require(:movie).permit(:title, :desc, :genres)
+        params.require(:movie).permit(:title, :desc, :rating, :genres)
     end
