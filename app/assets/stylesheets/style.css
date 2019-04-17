@@ -129,7 +129,6 @@ h2 a {
     color: #fff;
     transform: translate(-50%,-50%);
 }
-
 #submit{
     position: absolute;
     width: 10%;
@@ -175,6 +174,10 @@ h2 a {
 }
 
 form{
+
+
+}
+#flog{
     font-family: inherit;
     width: 100%; 
     font-size: 14px;
@@ -182,8 +185,7 @@ form{
     border-radius: 5px; 
     border: none;
     padding: 20px 15px 0px;
-    background-color: rgb(255, 255, 255);
-
+    background-color: rgb(255, 255, 255); 
 }
 
 #formHeader{
