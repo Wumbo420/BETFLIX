@@ -1,0 +1,23 @@
+<h1>Edit Movies</h1>
+
+<%= form_for :movie, url: movie_path, method: :update do |form| %>
+  <p id="title">
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ <p id="rating">
+    <%= form.label :rating %><br>
+    <%= form.text_field :rating %>
+  </p>
+  <p id="descriptor">
+    <%= form.label :desc %><br>
+    <%= form.text_area :desc %>
+  </p>
+ <p id="genre">
+    <%= form.label :genres %><br>
+    <%= form.text_field :genres %>
+  </p>
+  <p id="submit">
+    <%= form.submit %>
+  </p>
+<% end %>
