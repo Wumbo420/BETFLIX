@@ -10,7 +10,7 @@ h1{
     width: 75%;
     border: solid #221F1F;
     background-color: #221F1F;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 3em;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
@@ -22,7 +22,7 @@ h1{
     width: 35%;
     border: solid #221F1F;
     background-color: #221F1F;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 2em;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
@@ -31,22 +31,19 @@ h1{
 }
 .post-container{
     width: 45%;
-    border: solid;
     background-color: #fff;
     margin: 0 auto;
+    margin-bottom: 0px;
     margin-bottom: 2em;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.78);
-    border-radius: 20px;
-
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.78);
+    border-radius: 10px;
 
 }
 .post-container #commenter{
-    margin: 0 auto;
+     margin: 0 auto;
     text-align: center;
     color: #E50914;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
     font-weight: bold;
-
 
 }
 .post-container #comment{
@@ -64,7 +61,7 @@ h1{
     height: 50px;
     color: #E50914;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
 }
 .comment-container p {
