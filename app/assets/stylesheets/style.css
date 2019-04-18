@@ -59,7 +59,7 @@ h2 a {
     font-family: 'poppins', sans-serif;
     width: 100%;
     height: 100%;
-    background: rgb(26, 24, 24) url(moviee.jpg);
+    background: linear-gradient( to bottom right, #0a0a03 70%,#221F1F, rgb(174, 0, 18) 70%);
     background-size: 100%;
     background-position: 40%;
     margin:0; 
@@ -158,10 +158,8 @@ h2 a {
     }
 
 .log-form{
-    width: 40%;
-    height: auto;
-    min-width: 320px;
-    max-width: 475px;
+    width: 20%;
+    height: 35%;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -174,19 +172,15 @@ h2 a {
 
 }
 
-form{
-
-
-}
 #flog{
     font-family: inherit;
-    width: 100%; 
+    width: 100%;
     font-size: 14px;
     cursor: text;
-    border-radius: 5px; 
+    border-radius: 5px;
     border: none;
     padding: 20px 15px 0px;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
 }
 
 #formHeader{
@@ -224,18 +218,23 @@ input{
     }
     .btn {
         display: inline-block;
-        position: fixed;
+        position: absolute;
         cursor: pointer;
         font: inherit;
         border-style: solid;
         border: 1px;
-        margin: 1.5em;
         padding: 1em 2em;
         border-radius: 10px;
         background-color: #221F1F;
         color: #fff;
         width: 40%;
 
+    }
+    .log-form .btn{
+        position: sticky;
+    }
+    .log-form .reset{
+        position: sticky;
     }
 
 
@@ -344,7 +343,6 @@ input{
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
     }
-
     body{
         font-size: 15px;
         line-height: 24px;
