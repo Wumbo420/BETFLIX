@@ -4,16 +4,22 @@ h1{
   line-height: 1em;
   text-align: center;
   color: #FFF;
+    padding-top: 2em;
+}
+.post-container p{
+    padding-top: 2em;
 }
 .movie-container{
     top: 10%;
     width: 75%;
+    height: 60%;
     border: solid #221F1F;
     background-color: #221F1F;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 3em;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
 }
 .movie-container .paragraph{
     text-align: center;
@@ -30,21 +36,31 @@ h1{
 
 }
 .post-container{
-    width: 45%;
-    background-color: #fff;
+    width: 85%;
+    background-color: #221F1F;
     margin: 0 auto;
-    margin-bottom: 0px;
     margin-bottom: 2em;
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.78);
+    padding-top: 2em;
+    box-shadow: 0 0 10px 0 rgb(10, 10, 3);
     border-radius: 10px;
 
 }
 .post-container #commenter{
-     margin: 0 auto;
+    margin: 0 auto;
     text-align: center;
     color: #E50914;
     font-weight: bold;
 
+}.post-container #commenter input{
+     background-color: transparent;
+    color: #fff;
+    text-align: center;
+ }
+
+.post-container #comment input{
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
 }
 .post-container #comment{
     margin: 0 auto;
@@ -52,17 +68,12 @@ h1{
     color: #E50914;
     font-weight: bold;
 
-
 }
 .post-container #btn{
-
-    background-color:  #221F1F;
-    width: 200px;
-    height: 50px;
-    color: #E50914;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+    border: none;
 }
 .comment-container p {
     color: #fff;
@@ -75,5 +86,6 @@ h1{
     color: #E50914;
 }
 
+@media  {
 
-
+}

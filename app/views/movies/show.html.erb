@@ -2,7 +2,7 @@
           <div class = "movie-container">
           <h1><%= @movie.title %></h1>
           <p class="paragraph"> <%= @movie.desc %></p>
-          </div>
+
 
 
 
@@ -12,11 +12,11 @@
             <div class = "post-container">
             <p id="commenter">
               <%= form.label :name %><br>
-              <%= form.text_field :name %>
+              <%= form.text_field :name,:autocomplete => 'off' %>
             </p>
             <p id ="comment">
               <%= form.label :comment %><br>
-              <%= form.text_field :comment %>
+              <%= form.text_field :comment,:autocomplete => 'off' %>
             </p>
 
 
@@ -24,6 +24,7 @@
               <button id = "btn" <%= form.submit %>></button>
 
             </div>
+              </div>
           <% end %>
           <h1>Comments</h1>
           <% @movie.comments.each do |comment| %>

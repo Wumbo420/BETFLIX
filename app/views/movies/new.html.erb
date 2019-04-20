@@ -1,21 +1,21 @@
 <h1>New Movies</h1>
 
-<%= form_with scope: :movie, url: movies_path, local: true do |form| %>
+<%= form_with scope: :movie, url: movies_path, :class => 'form', local: true do |form| %>
   <p id="title">
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label :title,:autocomplete => 'off' %><br>
+    <%= form.text_field :title,:autocomplete => 'off' %>
   </p>
  <p id="rating">
-    <%= form.label :rating %><br>
-    <%= form.text_field :rating %>
+    <%= form.label :rating,:autocomplete => 'off' %><br>
+    <%= form.text_field :rating,:autocomplete => 'off' %>
   </p>
-  <p id="descriptor">
-    <%= form.label :desc %><br>
-    <%= form.text_area :desc %>
+  <p id="descriptor" >
+    <%= form.label :description, :autocomplete => 'off' %><br>
+    <%= form.text_area :desc ,:autocomplete => 'off'%>
   </p>
  <p id="genre">
-    <%= form.label :genres %><br>
-    <%= form.text_field :genres %>
+    <%= form.label :genres,:autocomplete => 'off' %><br>
+    <%= form.text_field :genres,:autocomplete => 'off' %>
   </p>
   <p id="submit">
     <%= form.submit %>

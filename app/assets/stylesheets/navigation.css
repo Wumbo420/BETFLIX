@@ -4,10 +4,10 @@
     padding: 1px;
     display: flex;
     background-color: rgb(31, 30, 30);
-    
   }
   nav .nav-wrapper{
     margin-left: auto;
+
    
   }
   nav a{
@@ -74,10 +74,10 @@
     display: inline-block;
     background-color: rgb(31, 30, 30);
     width: 100%;
+
   }
   nav .nav-wrapper{
   margin-left: auto;
-   
   }
   nav a{
     text-decoration: none;
@@ -133,4 +133,12 @@
   nav ul li a:hover {
     color: #564d4d;
   }  
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
 }
