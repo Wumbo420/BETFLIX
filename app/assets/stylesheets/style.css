@@ -16,13 +16,14 @@
 
 
     body{
+        display: block;
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 1px;
         margin:0;
         padding:0;
         width: 100%;
-        height: 90%;
+        height: 100%;
     }
 h2{
     font-size: 1em;
@@ -105,60 +106,62 @@ h2 a {
 
 #title{
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     width: 50%;
     text-align: center;
+    height: 3%;
 }
 #title input{
     width: 100%;
-    margin: 20px 0;
     background: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: 1px solid #E50914;
     color: #fff;
     font-size: 20px;
     text-align: center;
+    height: 3%;
 }
 #rating{
      position: absolute;
-    text-align: center;
-     top: 40%;
+     text-align: center;
+     top: 35%;
      left: 50%;
      transform: translate(-50%,-50%);
      color: #fff;
      width: 50%;
+     height: 2%;
  }
 #rating input{
     width: 100%;
-    margin: 20px 0;
     background: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: 1px solid #E50914;
     color: #fff;
     font-size: 20px;
     text-align: center;
-
+    height: 2%;
 }
 #genre{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff; width: 50%;
     text-align: center;
+    height: 2%;
 }
 #genre input{
     width: 100%;
-    margin: 20px 0;
     background: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: 1px solid #E50914;
     color: #fff;
     font-size: 20px;
     text-align: center;
+    height: 2%;
 }
 #poster{
     position: absolute;
@@ -180,19 +183,22 @@ h2 a {
 }
 
 #descriptor{
-    position: absolute;
+    margin-top: 5%;
+    position: fixed;
     top: 60%;
     left: 50%;
     color: #fff;
     transform: translate(-50%,-50%);
     text-align: center;
     width: 50%;
+    
 }
 #descriptor textarea{
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     height: 110px;
     max-height: 110px;
-    padding: 15px;
+    padding: 5px;
     background: transparent;
     outline: none;
     color: #fff;
@@ -221,7 +227,6 @@ h2 a {
     background-color: rgba(0,0,0,.5);
     border: none;
     border-radius: 20px;
-    margin-top: 30px;
     cursor: pointer;
     color: #E50914;
     width: 100%;
@@ -243,7 +248,7 @@ h2 a {
     }
 
 .log-form{
-    width: 20%;
+    width: 30%;
     height: 35%;
     background: #fff;
     position: absolute;
