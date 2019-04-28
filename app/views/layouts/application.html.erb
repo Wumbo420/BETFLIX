@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+
     <title>Betflix</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<<<<<<< HEAD
+    <%= stylesheet_link_tag    'application', 'data-turbolinks-track': 'reload', :media => 'all' %>
+    <%= javascript_include_tag 'application' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+=======
+  <%= javascript_include_tag 'application' %>
+>>>>>>> 73e1f4aa654719ef1e1b784529cda9ebd35f667b
   </head>
 
   <body>
+
     <%= render 'layouts/navigation' %>
     <%= yield %>
   </body>
