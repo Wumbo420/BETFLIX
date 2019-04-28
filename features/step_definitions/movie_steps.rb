@@ -1,5 +1,5 @@
 Given("I am on the Movies page") do
-  pending # Write code here that turns the phrase above into concrete actions
+ pending #write code here
 end
 
 When("I click on the {string} link") do |string|

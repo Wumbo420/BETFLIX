@@ -6,7 +6,7 @@ Feature: add a new movie
 
   Scenario: I want to be able to add a movie to the database
     Given  I am on the Movies page
-    When I click on the "DONT SEE A MOVIE? ADD ONE HERE!" link
+    When I click on the "Add movie here" link
     Then I should be on the "New Movies" page
     When I click on the "Save Movie" button
     Then I should be on the "Post a review" page
