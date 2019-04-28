@@ -419,8 +419,8 @@ input{
         height: 90%;
         display:block;
     }
-    
-    
+
+
     .slide{
         display: flex;
         justify-content: center;
@@ -445,14 +445,14 @@ input{
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
-    
+
+
     #img1{
         min-height: 100%;
         background-image: url(betflix.png);
     }
-    
-    
+
+
     .content{
         padding: 20px;
         box-sizing: content-box;
@@ -483,7 +483,7 @@ input{
         margin-bottom: 2.5vmin;
         color: #fff;
         font-family: Poppins;
-    
+
     }
     .link{
         color: #fff;
