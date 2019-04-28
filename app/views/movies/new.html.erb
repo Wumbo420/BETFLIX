@@ -17,6 +17,10 @@
     <%= form.label :genres,:autocomplete => 'off' %><br>
     <%= form.text_field :genres,:autocomplete => 'off' %>
   </p>
+  <p id="poster">
+    <%= form.label :Image,:autocomplete => 'off' %><br>
+    <%= form.file_field :poster ,:autocomplete => 'off' %>
+  </p>
   <p id="submit">
     <%= form.submit %>
   </p>

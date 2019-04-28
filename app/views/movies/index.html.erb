@@ -6,7 +6,11 @@
     <!--Card mockup -->
     <div class="slide">
       <div class="card">
-        <div class="image" id="img1"></div>
+        <div id="img1" class="image">
+          <% if movie.poster.attached? %>
+              <img class ="image" src="<%=(url_for(movie.poster)) %>">
+            <% end %>
+        </div>
         <div class="content">
           <p class="theme"><%= movie.title %></p>
           <h1>Rated: <%= movie.rating %></h1>
