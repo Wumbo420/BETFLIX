@@ -5,11 +5,13 @@
     <title>Betflix</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', 'data-turbolinks-track': 'reload', :media => 'all' %>
+    <%= javascript_include_tag 'application' %>
 
   </head>
 
   <body>
-  <%= stylesheet_link_tag    'application', 'data-turbolinks-track': 'reload', :media => 'all' %>
+
     <%= render 'layouts/navigation' %>
     <%= yield %>
   </body>
