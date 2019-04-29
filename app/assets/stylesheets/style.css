@@ -60,7 +60,7 @@ h2 a {
     font-family: 'poppins', sans-serif;
     width: 100%;
     height: 100%;
-    background: linear-gradient( to bottom right, #0a0a03 70%,#221F1F, rgb(174, 0, 18) 70%);
+    background: linear-gradient( to bottom right, rgba(10,10,3, 0.6) 70%,#221F1F, rgba(174, 0, 18, 0.5) 70%),url(moviee.jpg) ;
     background-size: 100%;
     background-position: 40%;
     margin:0; 
