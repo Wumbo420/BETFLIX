@@ -248,8 +248,12 @@ h2 a {
     }
 
 .log-form{
-    width: 30%;
-    height: 35%;
+    min-width: 25%;
+    width: auto;
+    max-width: 35%;
+    min-height: 25%;
+    height: auto;
+    max-height: 35%;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -401,7 +405,7 @@ input{
         color: #fff;
     }
     .paragraph{
-        font-size: 1.9vmin;
+        font-size: 1.2em;
         line-height: 1.8;
         font-weight: 300;
         margin-bottom: 2.5vmin;
@@ -490,6 +494,7 @@ input{
         font-family: Poppins;
         letter-spacing: 10px;
         color: grey;
+        text-align: center;
     }
     .header{
         font-weight: 700;

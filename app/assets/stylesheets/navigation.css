@@ -31,6 +31,14 @@
     font-size: 18px;
   
   }
+  
+  .logo a:hover{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+   
+  }
   nav ul{
     float: right;
   
