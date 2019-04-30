@@ -7,6 +7,7 @@ scenario "User adds a new movie" do
   expect(page).to have_content("Rating")
   expect(page).to have_content("Genres")
   expect(page).to have_content("Description")
+  expect(page).to have_content("Image")
   fill_in "Title", with: "my foobar"
   fill_in "Rating", with: "10"
   fill_in "Genres", with: "foobar/foobar"
@@ -20,6 +21,13 @@ end
 feature "adds a comment" do
   scenario "User posts a comment" do
     visit new_movie_path
+    expect(page).to have_content('Title')
+    expect(page).to have_content("Rating")
+    expect(page).to have_content("Genres")
+    expect(page).to have_content("Description")
+    fill_in "Title", with: "my foobar"
+    fill_in "Rating", with: "10"
+    fill_in "Genres", with: "foobar/foobar"
     click_button "Save Movie"
     expect(page).to have_content("Post a review")
     fill_in "Name", with: "my foobar"

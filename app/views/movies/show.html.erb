@@ -8,7 +8,10 @@
               <p class="paragraph"><%= @movie.desc %></p>
 
             </div>
-            <img class ="bg" src="<%=(url_for(@movie.poster)) %>">
+            <% if @movie.poster.attached? %>
+              <img class ="bg" src="<%=(url_for(@movie.poster)) %>">
+            <% end %>
+
 
 
           <div class="review-container">
