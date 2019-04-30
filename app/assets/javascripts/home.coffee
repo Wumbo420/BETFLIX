@@ -6,7 +6,7 @@ $ ->
     {
       "particles": {
         "number": {
-          "value": 50,
+          "value": 40,
           "density": {
             "enable": true,
             "value_area": 800
@@ -22,7 +22,7 @@ $ ->
             "color": "#E50914"
           },
           "polygon": {
-            "nb_sides": 5
+            "nb_sides": 6
           },
           "image": {
             "src": "img/github.svg",
