@@ -1,5 +1,5 @@
-<body class="homebackground">
-
+<body class="">
+<div id ="particles-js">
     <h3 id="home">Betflix</h3>
 <h2>A Platform for Movie Reviews</h2>
   
@@ -15,6 +15,12 @@
     </form>
   </div><!--end log form -->
 
-
+    <script type="text/javascript">
+        particlesJS.load('particles-js', '/public/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</div>
+<script src="particles.js"></script>
 </body>
 

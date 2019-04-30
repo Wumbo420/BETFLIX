@@ -3,10 +3,13 @@
 
             <div class ="para-bg">
               <h1><%= @movie.title %></h1>
+              <h1>Rating: <%= @movie.rating %></h1>
+              <h1>Genre: <%= @movie.genres %></h1>
               <p class="paragraph"><%= @movie.desc %></p>
-              <img class ="bg" src="<%=(url_for(@movie.poster)) %>">
+
             </div>
-          </div>
+            <img class ="bg" src="<%=(url_for(@movie.poster)) %>">
+
 
           <div class="review-container">
 
@@ -39,7 +42,7 @@
 
           <% end %>
 
-
+            </div>
           <script src="https://unpkg.com/scrollreveal"></script>
           <script>
               ScrollReveal().reveal('.comment-container',{

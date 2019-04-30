@@ -4,6 +4,8 @@ h1{
   line-height: 1em;
   text-align: center;
   color: #FFF;
+ text-decoration: underline;
+
 
 }
 #post{
@@ -20,14 +22,18 @@ h1{
     font-weight: 300;
     margin-bottom: 2.5vmin;
     color: #fff;
+
 }
 .para-bg{
     width: 65%;
     border: solid #221F1F;
-    background-color: #221F1F;
+    background-color: rgba(34,31,31,.9);
     border-radius: 10px;
-    margin: 0 auto;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    margin: auto;
+    padding: 10px;
+
+
 
 }
 .bg{

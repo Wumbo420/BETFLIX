@@ -12,7 +12,11 @@
         padding: 0;
         -webkit-font-smoothing: antialiased;
     }
-
+#particles-js{
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
 
 
     body{
@@ -39,7 +43,12 @@ h2 a {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: cyan;
+
+}
+h2 a:hover{
+    color: cyan;
 }
 #link_to{
 
