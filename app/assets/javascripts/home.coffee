@@ -6,14 +6,14 @@ $ ->
     {
       "particles": {
         "number": {
-          "value": 40,
+          "value": 30,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#E50914"
+          "value": "#6f080c"
         },
         "shape": {
           "type": "circle",
@@ -59,13 +59,13 @@ $ ->
         },
         "move": {
           "enable": true,
-          "speed": 6,
+          "speed": 1,
           "direction": "none",
           "random": false,
           "straight": false,
           "out_mode": "out",
           "attract": {
-            "enable": false,
+            "enable": true,
             "rotateX": 600,
             "rotateY": 1200
           }
@@ -75,14 +75,14 @@ $ ->
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
+            "enable": false,
             "mode": "repulse"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
           },
-          "resize": true
+          "resize": false
         },
         "modes": {
           "grab": {
