@@ -4,12 +4,13 @@ h1{
   line-height: 1em;
   text-align: center;
   color: #FFF;
-    padding-top: 2em;
+  padding: 0%;
 }
 .post-container p{
     padding-top: 2em;
 }
 .movie-container{
+    display: inline;
     top: 10%;
     width: 75%;
     height: 60%;
@@ -22,7 +23,9 @@ h1{
 
 }
 .movie-container .paragraph{
-    text-align: center;
+    text-align: justify;
+    margin: 10%;
+
 }
 .comment-container{
     width: 35%;

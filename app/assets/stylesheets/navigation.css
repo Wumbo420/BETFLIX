@@ -1,10 +1,11 @@
 
   nav{
     display: inline-block;
-    background-color: rgb(31, 30, 30);
+    /*background-color: rgb(31, 30, 30);*/
     width: 100%;
 
   }
+
   nav .nav-wrapper{
   margin-left: auto;
   }
@@ -29,6 +30,14 @@
     font-weight: 700;
     font-size: 18px;
   
+  }
+  
+  .logo a:hover{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+   
   }
   nav ul{
     float: right;
