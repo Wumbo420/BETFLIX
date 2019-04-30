@@ -1,13 +1,16 @@
 
           <div class = "movie-container">
-          <h1><%= @movie.title %></h1>
-          <p class="paragraph"> <%= @movie.desc %></p>
 
+            <div class ="para-bg">
+              <h1><%= @movie.title %></h1>
+              <p class="paragraph"><%= @movie.desc %></p>
+              <img class ="bg" src="<%=(url_for(@movie.poster)) %>">
+            </div>
+          </div>
 
+          <div class="review-container">
 
-
-
-          <h1>Post a review</h1>
+          <h1 id="post">Post a review</h1>
           <%= form_for([@movie,@movie.comments.build]) do |form| %>
             <div class = "post-container">
             <p id="commenter">
@@ -18,13 +21,9 @@
               <%= form.label :comment %><br>
               <%= form.text_field :comment,:autocomplete => 'off' %>
             </p>
-
-
-
               <button id = "btn" <%= form.submit  %>></button>
-
             </div>
-              </div>
+
           <% end %>
           <h1>Comments</h1>
           <% @movie.comments.each do |comment| %>
@@ -34,6 +33,7 @@
               <p><%= comment.comment %></p>
             </div>
 
+              </div>
 
 
 

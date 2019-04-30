@@ -4,7 +4,40 @@ h1{
   line-height: 1em;
   text-align: center;
   color: #FFF;
-  padding: 0%;
+
+}
+#post{
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #FFF;
+    padding-top: 10em;
+}
+.paragraph{
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+    color: #fff;
+}
+.para-bg{
+    width: 65%;
+    border: solid #221F1F;
+    background-color: #221F1F;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+
 }
 .post-container p{
     padding-top: 2em;
@@ -47,6 +80,9 @@ h1{
     box-shadow: 0 0 10px 0 rgb(10, 10, 3);
     border-radius: 10px;
 
+}
+.review-container{
+    padding-top: 30em;
 }
 .post-container #commenter{
     margin: 0 auto;
