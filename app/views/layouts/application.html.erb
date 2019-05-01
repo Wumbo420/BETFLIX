@@ -13,7 +13,7 @@
 
   <body>
 
-    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/navigation' unless @disable_nav%>
     <%= yield %>
   </body>
 </html>

@@ -122,12 +122,13 @@ h1{
 }
 .comment-container p {
     color: #fff;
-    font-weight: bold;
+
     text-align: center;
 
 
 }
 .comment-container #comment-name{
     color: #E50914;
+    font-weight: bold;
 }
 
