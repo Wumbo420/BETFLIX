@@ -197,7 +197,7 @@ input{
     }
     .btn {
         display: inline-block;
-        position: absolute;
+        position: relative;
         cursor: pointer;
         font: inherit;
         border-style: solid;
@@ -208,6 +208,23 @@ input{
         color: #fff;
         width: 40%;
 
+    }
+    .signup{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        font: inherit;
+        border-style: solid;
+        border: 1px;
+        padding: 1em 2em;
+        border-radius: 10px;
+        background-color: #221F1F;
+        color: #fff;
+        width: 40%;
+    }
+    a{
+        text-decoration: none;
+        color: #ffff;
     }
     .log-form .btn{
         position: sticky;
