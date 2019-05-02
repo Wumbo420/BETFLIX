@@ -13,6 +13,7 @@
       <input  type="password" title="username" placeholder="password" />
       <button type="submit" class="btn"><a href="<%= pages_home_path %>">Login</a></button>
       <a class="reset" href="#">Forgot Username?</a>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
       <button type="submit" class="signup"><a href="<%= pages_signup_path %>">Sign Up</a></button>
     </form>
   </div><!--end log form -->
