@@ -10,5 +10,5 @@ Rails.application.routes.draw do
     resources :comments
   end
   
-    root 'pages#index'
+    root 'pages#home'
 end
