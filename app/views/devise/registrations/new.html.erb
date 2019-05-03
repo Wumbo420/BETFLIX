@@ -1,11 +1,12 @@
-
+<body id = "bg">
+<div id="particles-js" >
 <div class="log-form">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  
+
   <h2 id = formHeader> Betflix Sign Up</h2>
   <%= render "devise/shared/error_messages", resource: resource %>
 <form id="flog">
-  <br>
+
   <div>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email" %>
   </div>
@@ -14,15 +15,20 @@
 
     <%= f.password_field :password, autocomplete: "new-password", placeholder:"password (6 characters minimum)" %>
   </div>
-  
+
   <div>
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"password Confirmed" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"Confirm Password" %>
   </div>
 
-  
+
     <%= f.submit "Sign up", class:"btn"%>
- 
+
   </form>
-  
-</div>
+
+
 <% end %>
+  </div>
+</div>
+  </body>
+
+<script src="particles.js"></script>

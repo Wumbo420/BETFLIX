@@ -11,6 +11,8 @@ Rails.application.config.assets.precompile += %w(home.css)
 Rails.application.config.assets.precompile += %w( navigation.css )
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'javascripts')
 Rails.application.config.assets.precompile += %w( .js .es6 )
+Rails.application.config.assets.precompile += %w( particles.js )
+Rails.application.config.assets.precompile += %w( app.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
