@@ -79,3 +79,29 @@
 .sticky  .content {
     padding-top: 60px;
 }
+.search_btn{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font: inherit;
+    border-style: solid;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #221F1F;
+    color: #fff;
+    width: 13em;
+    padding: 5px 10px;
+    margin: auto;
+    margin-top: 1em;
+    height: 3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.search{
+  border-radius: 8px;
+  padding-left: 1em;
+  padding-top: 1em;
+  display: block;
+  font-family: inherit 16px;
+  width: 50%
+}

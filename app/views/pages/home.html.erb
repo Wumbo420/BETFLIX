@@ -3,9 +3,13 @@
 
   <h3 id="home">Betflix</h3>
   <h2>A Platform for Movie Reviews</h2>
-
-
-<!-- Search bar can go here -->
+  <div>
+    
+ 
+ <%= form_tag movies_path, :method => 'get' do %>
+   <%= text_field_tag :title_search, params[:@movies_title], class: "search", placeholder: "Search" %><br><div>
+   <%= submit_tag "Search", :name => nil, class: "search_btn" %>
+ <% end %>
 
 
 </body>

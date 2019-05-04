@@ -1,13 +1,14 @@
 #title{
     position: absolute;
+    margin: auto;
     top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     width: 50%;
     text-align: center;
-
-
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 #title input{
     width: 100%;
@@ -15,7 +16,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    font-size: 20px;
+    font-size: 0.9em;
     text-align: center;
 
 
@@ -23,13 +24,15 @@
 
 #rating{
     position: absolute;
-    text-align: center;
+    margin: auto;
     top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     width: 50%;
-
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 #rating input{
     width: 100%;
@@ -37,17 +40,21 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    font-size: 20px;
+    font-size: 0.9em;
     text-align: center;
 
 }
 #genre{
     position: absolute;
+    margin: auto;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #fff; width: 50%;
+    color: #fff;
+    width: 50%;
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
 }
 #genre input{
@@ -56,7 +63,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    font-size: 20px;
+    font-size: 0.9em;
     text-align: center;
 
 }
@@ -70,20 +77,19 @@
 }
 #poster input{
     width: 100%;
-    margin: 20px 0;
+    margin: 2% 0;
     background: rgba(0, 0, 0, 0);
-
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    font-size: 20px;
+    font-size: 1em;
     text-align: center;
+    margin: auto;
 }
 
 .image-poster  #btn{
-
+    
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -91,9 +97,8 @@
 }
 
 #descriptor{
-    margin-top: 5%;
     position: fixed;
-    top: 60%;
+    top: 65%;
     left: 50%;
     color: #fff;
     transform: translate(-50%,-50%);
@@ -124,13 +129,11 @@
     width: 50%;
     font-size: 16px;
     cursor: pointer;
-    top: 90%;
+    top: 85%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%,-50%)
 }
 #submit input{
-    padding: 20px 32px;
     font-size: 16px;
     background-color: rgba(0,0,0,.5);
     border: none;
@@ -138,5 +141,4 @@
     cursor: pointer;
     color: #fff;
     width: 100%;
-
 }
