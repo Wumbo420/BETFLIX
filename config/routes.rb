@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'movies/index'
     get 'pages/home'
     get 'pages/signup'
+    get 'devise/registrations/new'
     get 'pages/home' => 'movies#search', :as => 'search_page'
   resources :movies do
     resources :comments

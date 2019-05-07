@@ -5,12 +5,7 @@ class MoviesController < ApplicationController
     end
     
     def search  
-      if params[:search].blank?  
-        redirect_to(root_path, alert: "Empty field!") and return  
-      else  
-        @parameter = params[:search].downcase  
-        @results = Movie.all.where("lower(name) LIKE :search", search: @parameter)  
-      end  
+   @movies = Movie.search(params[:search])
     end
     
     def show
@@ -50,5 +45,5 @@ class MoviesController < ApplicationController
 end
 private
     def movie_params
-        params.require(:movie).permit(:poster, :title, :desc, :rating, :genres)
+        params.require(:movie).permit(:poster, :title, :desc, :rating, :genres,:search)
     end

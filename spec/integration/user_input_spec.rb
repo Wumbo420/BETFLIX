@@ -1,5 +1,40 @@
 require 'rails_helper.rb'
 
+
+feature "user navigates" do
+  scenario "Validates navigation of site" do
+    visit pages_home_path
+    expect(page).to have_content("Betflix")
+    click_on 'Movies'
+    expect(page).to have_content("Dont see a movie? Add one here!")
+    click_on 'Dont see a movie? Add one here!'
+    expect(page).to have_content('New Movies')
+    click_on 'Login'
+    expect(page).to have_content('Betflix Login')
+    click_on 'Home'
+    expect(page).to have_content("Betflix")
+
+  end
+end
+feature "Navigation Requests Spec" do
+  describe "Navigation should be available" do
+    it "should show the navigation on all pages" do
+      visit pages_home_path
+      expect(page).to have_link('Login')
+      expect(page).to have_link('Home')
+      expect(page).to have_link('Movies')
+      visit new_movie_path
+      expect(page).to have_link('Login')
+      expect(page).to have_link('Home')
+      expect(page).to have_link('Movies')
+      visit movies_index_path
+      expect(page).to have_link('Login')
+      expect(page).to have_link('Home')
+      expect(page).to have_link('Movies')
+    end
+  end
+end
+
 feature "adds a new movie" do
 scenario "User adds a new movie" do
   visit new_movie_path
@@ -43,4 +78,3 @@ feature "adds a comment" do
 
   end
 end
-
